@@ -6,6 +6,7 @@ instance_destroy(oFloor);
 // resetting position of level creator
 x = 640;
 y = 640;
+stairway = false;
 
 // Fill the room with walls
 for (i = 0; i <= room_width div TILE_SIZE; i++)
@@ -38,6 +39,11 @@ repeat(roomSize)
     // delete the block we end on and a square around it - easier for player positioning
     object = instance_position(x,y,oWall);
     instance_destroy(object);
+    
+    if(!stairway && random_range(0,100) <= 3){
+        instance_create(x,y,oStairway);
+        stairway = true;
+    }
     
 }
 

@@ -9,17 +9,22 @@
     <sprite>sprites\spWall</sprite>
     <sprite>sprites\spFloor</sprite>
     <sprite>sprites\sPlayerSymbol</sprite>
+    <sprite>sprites\spStairway</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scCreateFloor.gml</script>
+    <scripts name="oPlayer">
+      <script>scripts\scPlayerInit.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\oPlayer</object>
     <object>objects\oControl</object>
     <object>objects\oWall</object>
     <object>objects\oFloor</object>
+    <object>objects\oStairway</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rFloor</room>
