@@ -52,6 +52,14 @@ scCreateFloor();
             <string>if (keyboard_check(vk_escape)){
     game_end();
 }
+
+if(keyboard_check(vk_tab)){
+    oPlayer.mouseFree = !oPlayer.mouseFree
+}
+
+if(keyboard_check(ord("R"))){
+    scCreateFloor();
+}
 </string>
           </argument>
         </arguments>

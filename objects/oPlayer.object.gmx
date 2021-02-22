@@ -41,8 +41,8 @@ move_f = 0;
 move_s = 0;
 vsp = 0;
 hsp = 0;
-accel = 0.5;
-maxspeed = 3;
+accel = 0.25;
+maxspeed = 1.5;
 
 //mouselook
 xto = x+1;
@@ -61,6 +61,13 @@ globalvar camsin;
 globalvar camcos;
 camsin = sin(direction*pi/180);
 camcos = cos(direction*pi/180);
+
+// Camera effects
+//d3d_set_fog(true,c_white,0,160);
+d3d_set_lighting(true);
+
+// lock mouse
+mouseFree = false;
 </string>
           </argument>
         </arguments>
@@ -127,6 +134,11 @@ if place_meeting(x,y+vsp,oWall)
     vsp = 0  
     }
 y += vsp;
+
+// Player gives off light
+d3d_light_define_point(1, x, y, player_height / 2, 140, c_white);
+d3d_light_enable(1, true);
+
 </string>
           </argument>
         </arguments>
@@ -148,7 +160,9 @@ y += vsp;
           <argument>
             <kind>1</kind>
             <string>///Mouse Look
-
+if (!mouseFree)
+{
+window_set_cursor(cr_none);
 direction -= (display_mouse_get_x() - display_get_width()/2) / 8;
 zdir -= (display_mouse_get_y() - display_get_height()/2) / 10;
 
@@ -167,6 +181,10 @@ zto = (player_height) + sin(zd);
 var centerx = display_get_width()/2;
 var centery = display_get_height()/2;
 display_mouse_set(centerx, centery);
+} else
+{
+ window_set_cursor(cr_arrow);
+}
 </string>
           </argument>
         </arguments>
@@ -191,6 +209,9 @@ display_mouse_set(centerx, centery);
             <kind>1</kind>
             <string>/// Draw camera
 d3d_set_projection_ext(x,y,player_height,xto,yto,zto,0,0,1,75,16/9,1,99999)
+
+// head bob
+
 </string>
           </argument>
         </arguments>

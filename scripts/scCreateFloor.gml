@@ -1,6 +1,7 @@
 ///scCreateFloor()
 // Clear out the room (when changing floor and for testing) 
 instance_destroy(oWall);
+instance_destroy(oFloor);
 
 // resetting position of level creator
 x = 640;
@@ -12,6 +13,7 @@ for (i = 0; i <= room_width div TILE_SIZE; i++)
     for (j = 0; j <= room_height div TILE_SIZE; j++)
     {
         instance_create(i * TILE_SIZE, j * TILE_SIZE,oWall)
+        instance_create(i * TILE_SIZE, j * TILE_SIZE,oFloor)
     }
 }
 
@@ -40,7 +42,8 @@ repeat(roomSize)
 }
 
 // Set player to the start of the floor
-oPlayer.x = 640;
-oPlayer.y = 640;
+
+oPlayer.x = x + 16;
+oPlayer.y = y + 16;
 
 

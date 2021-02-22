@@ -26,10 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Draw the floor
-var w = image_xscale * 32;
-var h = image_yscale * 32;
+var w = 32;
+var h = 32;
 var texture = sprite_get_texture(spFloor,0);
-d3d_draw_floor(x,y,0,x + w, x + h, 0, texture, w/32, h/32);
+d3d_draw_floor(x,y,0,x + 32, y + 32, 0, texture, 1, 1);
+d3d_draw_floor(x,y,72,x + 32, y + 32, 72, texture, 1, 1);
 </string>
           </argument>
         </arguments>
