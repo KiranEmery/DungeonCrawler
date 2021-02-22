@@ -5,9 +5,25 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spWall</sprite>
+    <sprite>sprites\spFloor</sprite>
+    <sprite>sprites\sPlayerSymbol</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scCreateFloor.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\oPlayer</object>
+    <object>objects\oControl</object>
+    <object>objects\oWall</object>
+    <object>objects\oFloor</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rFloor</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
