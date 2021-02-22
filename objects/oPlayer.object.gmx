@@ -95,7 +95,8 @@ y += vsp;
 
 // Player gives off light
 d3d_light_define_point(1, x, y, player_height / 2, 140, c_white);
-d3d_light_enable(1, true);
+d3d_light_enable(1,true);
+
 
 </string>
           </argument>

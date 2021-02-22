@@ -29,7 +29,7 @@
 var texture = sprite_get_texture(spWall,0);
 var w = image_xscale * 32;
 var h = image_yscale * 32;
-var z = 72;
+var z = 45;
 
 //top wall
 d3d_draw_wall(x, y, 0, x+w, y, z,texture, w/32, z/32);

@@ -36,9 +36,7 @@ camsin = sin(direction*pi/180);
 camcos = cos(direction*pi/180);
 
 // Camera effects
-// d3d_set_fog(true,c_white,0,160);
 d3d_set_lighting(true);
-d3d_set_shading(true);
 
 // lock mouse
 mouseFree = false;
