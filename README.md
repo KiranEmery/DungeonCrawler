@@ -1,5 +1,6 @@
 # DungeonCrawler
-A 3D Classic dungeon crawler game written in GameMaker 1.
+A 3D Classic dungeon crawler game written in GameMaker 1.4
+Currently not got a proper name and is open since it's just a personal project for now.
 
 The current version can be downloaded here: https://github.com/KiranEmery/DungeonCrawler/blob/main/exes/DungeonCrawler%20PreAlpha%201.exe
 
