@@ -1,5 +1,7 @@
 # DungeonCrawler
-A 3D Classic dungeon crawler game written in GameMaker 1.4
+A 3D Classic dungeon crawler game written in GameMaker 1.
+
+The current version can be downloaded here: https://github.com/KiranEmery/DungeonCrawler/blob/main/exes/DungeonCrawler%20PreAlpha%201.exe
 
 A screenshot as of 22/02/2021
 ![alt text](https://github.com/KiranEmery/DungeonCrawler/blob/main/Screenshots/wip_ss_1.PNG)
@@ -10,6 +12,8 @@ Current features:
 * Stairways are spawned (they look like doors), currently they don't do anything
 * Press [TAB] to free the mouse or re-lock it to the window
 
-All artwork and code written by Kiran Emery
+I have no idea how far this will progress or how often I will work on it.
 
-The current version can be downloaded here: https://github.com/KiranEmery/DungeonCrawler/blob/main/exes/DungeonCrawler%20PreAlpha%201.exe
+All artwork drawn and code written by Kiran Emery
+
+
