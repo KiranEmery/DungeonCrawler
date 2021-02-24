@@ -14,9 +14,12 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scCreateFloor.gml</script>
     <scripts name="oPlayer">
       <script>scripts\scPlayerInit.gml</script>
+      <script>scripts\scPlayerStep.gml</script>
+    </scripts>
+    <scripts name="oControl">
+      <script>scripts\scCreateFloor.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
