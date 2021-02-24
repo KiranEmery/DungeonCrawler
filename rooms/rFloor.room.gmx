@@ -6,7 +6,7 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>60</speed>
+  <speed>9999</speed>
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
@@ -53,7 +53,7 @@
   <instances>
     <instance objName="oFloor" x="0" y="0" name="inst_C0A8A241" locked="-1" code="" scaleX="40.2580642700195" scaleY="40" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="-32" y="128" name="inst_521A1B1A" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oControl" x="128" y="-96" name="inst_778CA4E2" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oControl" x="128" y="-64" name="inst_61CDAA89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

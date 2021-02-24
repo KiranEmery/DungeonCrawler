@@ -572,7 +572,7 @@
     <option_windows_build_version>1</option_windows_build_version>
     <option_windows_company_info>Kiran Emery</option_windows_company_info>
     <option_windows_copyright_info>Kiran Emery</option_windows_copyright_info>
-    <option_windows_create_textures_on_demand>False</option_windows_create_textures_on_demand>
+    <option_windows_create_textures_on_demand>True</option_windows_create_textures_on_demand>
     <option_windows_description_info></option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
@@ -589,9 +589,9 @@
     <option_windows_splash_background_colour>#000000</option_windows_splash_background_colour>
     <option_windows_splash_screen>Configs\Default\windows\splash.png</option_windows_splash_screen>
     <option_windows_steam_app_id>0</option_windows_steam_app_id>
-    <option_windows_texture_page>2048</option_windows_texture_page>
+    <option_windows_texture_page>256</option_windows_texture_page>
     <option_windows_use_splash>-1</option_windows_use_splash>
-    <option_windows_vertex_buffer_method2>1</option_windows_vertex_buffer_method2>
+    <option_windows_vertex_buffer_method2>2</option_windows_vertex_buffer_method2>
     <option_winphone_480_splash_image>Configs\Default\WinPhone\SplashScreenImage480.jpg</option_winphone_480_splash_image>
     <option_winphone_720_splash_image>Configs\Default\WinPhone\SplashScreenImage720.jpg</option_winphone_720_splash_image>
     <option_winphone_768_splash_image>Configs\Default\WinPhone\SplashScreenImage.jpg</option_winphone_768_splash_image>
@@ -678,7 +678,8 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="1">
+    <constants number="2">
+      <constant name="MAX_FPS">60</constant>
       <constant name="TILE_SIZE">32</constant>
     </constants>
   </ConfigConstants>

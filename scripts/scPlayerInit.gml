@@ -1,5 +1,4 @@
 ///INIT player
-
 depth = 1000000;
 
 d3d_start();
@@ -14,8 +13,7 @@ move_f = 0;
 move_s = 0;
 vsp = 0;
 hsp = 0;
-accel = 0.25;
-maxspeed = 1.5;
+
 
 // mouselook
 xto = x+1;
@@ -37,6 +35,7 @@ camcos = cos(direction*pi/180);
 
 // Camera effects
 d3d_set_lighting(true);
+d3d_set_culling(true);
 
 // lock mouse
 mouseFree = false;
